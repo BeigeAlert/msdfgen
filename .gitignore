@@ -20,3 +20,5 @@ out/
 build/
 build_xcode/
 /.vs/Msdfgen/v16/ipch/AutoPCH/d476d9ebb30ee8d8/CONTOUR-COMBINERS.ipch
+/.vs/Msdfgen/v16/ipch/AutoPCH/2b8992839f20adfa/*.ipch
+*.ipch

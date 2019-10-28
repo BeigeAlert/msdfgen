@@ -146,7 +146,7 @@
     <TargetName>msdfgen</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Library|x64'">
-    <TargetName>msdfgen</TargetName>
+    <TargetName>msdfgen-d</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -202,7 +202,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MSDFGEN_USE_CPP11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;freetype/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Lib>
       <AdditionalLibraryDirectories>freetype/win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -278,7 +279,7 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>include;freetype/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>MSDFGEN_USE_CPP11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
